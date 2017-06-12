@@ -18,9 +18,16 @@ class CardsController extends Controller
 
     public function show(Card $card)
     {
+        $card->load('notes.user');
+
+
 
         return view('cards.show', compact('card'));
 //        $card = Card::find($id);
 //        return view('cards.show', compact('card'));
     }
+//    public function user()
+//    {
+//        return $this->belongsTo(User::class);
+//    }
 }

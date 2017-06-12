@@ -12,8 +12,8 @@
 
 
 @section('footer')
-    <script>
-        alert("Welcome Page is here")
-    </script>
+    {{--<script>--}}
+        {{--alert("Welcome Page is here")--}}
+    {{--</script>--}}
 
 @stop
